@@ -7,13 +7,39 @@
     }
     
     #regForm {
-        background-color: #ffffff;
-        margin: auto;
-        font-family: 'Times New Roman', Times, serif;
-        padding: 30px;
-        width: 30%;
-        min-width: 300px;
+        background: white;
+        box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+        -moz-box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+        -webkit-box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+        border-radius: 14px;
+        width: 40%; 
+        float: right;
+        margin-right: 10em;
+        padding: 30px 10px 20px 30px;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
+
+
+    @media screen and (max-width: 1000px) {
+        #regForm {
+            background: white;
+            box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+            -moz-box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+            -webkit-box-shadow: 1px 0px 5px 0px rgb(156 156 156 / 62%);
+            border-radius: 14px;
+            width: 100%; 
+            float: unset;
+            display: flexbox;
+            margin-right: unset;
+            padding: 30px 10px 20px 30px;
+            margin-top: 2em;
+            margin-bottom: 2em;
+            
+            
+      
+        }
+      }
     
     h1 {
         text-align: center;  
@@ -45,6 +71,7 @@
         font-size: 17px;
         font-family: Raleway;
         cursor: pointer;
+        width: 100%;
     }
     
     button:hover {

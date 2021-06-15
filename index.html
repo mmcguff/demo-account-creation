@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Demo Registration</title>
 </head>
@@ -12,15 +12,18 @@
 <body>
 
     <form id="regForm" action="/action_page.php">
-        <h1>Demo Registration</h1>
-        <!-- One "tab" for each step in the form: -->
+        <h1>Demo</h1>
+
+
+
         <div class="tab">
             <div class="row">
                 <div class="col">
                     <div class="form-group">
                         <label for="first-name">First Name</label>
-                        <input type="phone" name="first-name" id="first-name" placeholder="Abraham" class="form-control" required>
-                            <div class="invalid-feedback">This field is required.</div>
+                        <input type="phone" name="first-name" id="first-name" placeholder="Abraham" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
                     </div>
                 </div>
                 <div class="col">
@@ -30,7 +33,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="form-group">
                 <label for="email">E-mail</label>
                 <input type="text" name="email" id="email" placeholder="abe123@lincoln-law.com" class="form-control">
@@ -67,37 +70,133 @@
                 <div class="col">
                     <div class="form-group">
                         <label for="work-phone">Work Phone</label>
-                        <input type="phone" name="work-phone" id="work-phone" placeholder="208-123-4444" class="form-control" required>
-                            <div class="invalid-feedback">This field is required.</div>
+                        <input type="phone" name="work-phone" id="work-phone" placeholder="208-123-4444"
+                            class="form-control" required>
+                        <div class="invalid-feedback">This field is required.</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-group">
                         <label for="personal-phone">Personal Phone</label>
-                        <input type="phone" name="personal-phone" id="personal-phone" placeholder="208-123-4444" class="form-control">
+                        <input type="phone" name="personal-phone" id="personal-phone" placeholder="208-123-4444"
+                            class="form-control">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="tab">Legal Credentials:
-            <p><input placeholder="Bar Number..." oninput="this.className = '" name="barNum"></p>
-            <p><input placeholder="Bar Admission Number..." oninput="this.className = ''" name="adminNum"></p>
-            <p><input placeholder="Licensed State..." oninput="this.className = ''" name="licenseState"></p>
-            <p><input placeholder="Law School..." oninput="this.className = ''" name="lawSchool"></p>
-            <p><input placeholder="Graduation Year..." oninput="this.className = ''" name="gradYear"></p>
-            <p style="visibility: hidden;"><input placeholder="placeholder..." oninput="this.className = ''"></p>
-            <p style="visibility: hidden;"><input placeholder="placeholder..." oninput="this.className = ''"></p>
-            <p style="visibility: hidden;"><input placeholder="placeholder..." oninput="this.className = ''"></p>
-            <p style="visibility: hidden;"><input placeholder="placeholder..." oninput="this.className = ''"></p>
+        <div class="tab">
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="bar-number">Bar Number</label>
+                        <input type="text" name="bar-number" id="bar-number" placeholder="1234567" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="bar-admission-number">Bar Admission Number</label>
+                        <input type="text" name="bar-admission-number" id="bar-admission-number" placeholder="1234567"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="law-school">Law School</label>
+                        <input name="law-school" id="law-school" placeholder="Home School" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="text" name="graduation-year" id="graduation-year" placeholder="1836"
+                            class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div style="visibility: hidden;" class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="law-school">Law School</label>
+                        <input name="law-school" id="law-school" placeholder="Home School" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="text" name="graduation-year" id="graduation-year" placeholder="1836"
+                            class="form-control">
+                    </div>
+                </div></div>
+            <div style="visibility: hidden;" class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="law-school">Law School</label>
+                        <input name="law-school" id="law-school" placeholder="Home School" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="text" name="graduation-year" id="graduation-year" placeholder="1836"
+                            class="form-control">
+                    </div>
+                </div></div>
+            <div style="visibility: hidden;" class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="law-school">Law School</label>
+                        <input name="law-school" id="law-school" placeholder="Home School" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="text" name="graduation-year" id="graduation-year" placeholder="1836"
+                            class="form-control">
+                    </div>
+                </div></div>
+            <div style="visibility: hidden;" class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="law-school">Law School</label>
+                        <input name="law-school" id="law-school" placeholder="Home School" class="form-control"
+                            required>
+                        <div class="invalid-feedback">This field is required.</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="graduation-year">Graduation Year</label>
+                        <input type="text" name="graduation-year" id="graduation-year" placeholder="1836"
+                            class="form-control">
+                    </div>
+                </div></div>
         </div>
 
 
 
         <div style="overflow:auto;">
-            <div style="float:right;">
-                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+            <div id="container">
+                
+                <button type="button" id="prevBtn" class="btn btn-lg btn-block"  onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" class="btn btn-lg btn-block" onclick="nextPrev(1)">Next</button>
+  
             </div>
         </div>
         <!-- Circles which indicates the steps of the form: -->
